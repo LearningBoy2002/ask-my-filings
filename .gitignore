@@ -39,3 +39,6 @@ data/
 
 # --- Misc ---
 opencode.json.bak
+
+# EDGAR cache
+.cache/
