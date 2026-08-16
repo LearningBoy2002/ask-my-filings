@@ -3,7 +3,7 @@
 **Last reconciled:** 2026-08-15
 **Purpose:** Single authoritative technical architecture reference for Claude Projects. Supersedes all earlier system-design drafts, HTML design docs, and chunking-spec conversations. Where earlier material conflicts with this file, this file wins.
 
-**Revision note (2026-08-15):** This revision incorporates two locked decisions from `ask-my-filings-viability-review.md` (XBRL-primary structured extraction; LLM decision reopened) and one sequencing change from `ask-my-filings-execution-plan.md` (minimal 3-node LangGraph built and validated before the full 8-node topology). No other architectural component changed. Feed this file, `TECH_DECISIONS.md`, and `PROJECT_MEMORY.md` to OpenCode/DeepSeek as the ground-truth spec for a from-scratch build.
+**Revision note (2026-08-15):** This revision incorporates two locked decisions from `ask-my-filings-viability-review.md` (XBRL-primary structured extraction; LLM decision reopened) and one sequencing change from `execution-plan.md` (minimal 3-node LangGraph built and validated before the full 8-node topology). No other architectural component changed. Feed this file, `TECH_DECISIONS.md`, and `PROJECT_MEMORY.md` to OpenCode/DeepSeek as the ground-truth spec for a from-scratch build.
 
 ---
 

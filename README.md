@@ -16,7 +16,7 @@ Portfolio-grade financial document intelligence system. Users upload SEC filings
 | `docs/ARCHITECTURE.md` | System design, data flow, LangGraph topology, schema |
 | `docs/TECH_DECISIONS.md` | Locked technology decisions |
 | `docs/PROJECT_MEMORY.md` | Project state, decisions, hard constraints |
-| `docs/ask-my-filings-execution-plan.md` | Build roadmap (Phases 0-8) |
+| `docs/execution-plan.md` | Build roadmap (Phases 0-8) |
 
 ## Repository structure
 

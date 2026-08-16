@@ -5,7 +5,7 @@ agent: plan
 
 You are the planning step of the Ask My Filings workflow. Produce a written plan, do not implement it.
 
-1. Read `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/TECH_DECISIONS.md`, `docs/PROJECT_MEMORY.md`, `docs/ask-my-filings-execution-plan.md`.
+1. Read `AGENTS.md`, `docs/ARCHITECTURE.md`, `docs/TECH_DECISIONS.md`, `docs/PROJECT_MEMORY.md`, `docs/execution-plan.md`.
 2. For the task, output a plan containing:
    - Exact file paths to create or modify
    - Function signatures / module responsibilities (no full implementations, at most ~15 lines of illustrative code)

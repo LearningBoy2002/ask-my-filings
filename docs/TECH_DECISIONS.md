@@ -3,7 +3,7 @@
 **Last reconciled:** 2026-08-15
 **Purpose:** Single authoritative decision log for Claude Projects. Every technology choice below is locked. Do not propose alternatives to a locked decision unless a concrete new technical blocker is found — if you do, it must be logged here in the Conflict Resolution format, not silently substituted.
 
-**Revision note (2026-08-15):** Adds Decision 12 (XBRL-primary structured extraction) and reopens the LLM decision (Conflict 6 below), per `ask-my-filings-viability-review.md`. Adds a build-sequencing note to Decision 6 (LangGraph) per `ask-my-filings-execution-plan.md`. No other locked decision changed.
+**Revision note (2026-08-15):** Adds Decision 12 (XBRL-primary structured extraction) and reopens the LLM decision (Conflict 6 below), per `ask-my-filings-viability-review.md`. Adds a build-sequencing note to Decision 6 (LangGraph) per `execution-plan.md`. No other locked decision changed.
 
 ---
 

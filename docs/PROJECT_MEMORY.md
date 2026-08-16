@@ -3,7 +3,7 @@
 **Last reconciled:** 2026-08-15
 **Purpose:** This is the single authoritative memory file for Claude Projects. It supersedes all prior versions of `PROJECT_MEMORY.md` and `ASK_MY_FILINGS_CONTEXT.md`. Where earlier conversations conflict with this file, this file wins.
 
-**Revision note (2026-08-15):** Incorporates the two locked changes from `ask-my-filings-viability-review.md` (AD-012 XBRL-primary structured extraction; LLM decision reopened) and the build-sequencing change from `ask-my-filings-execution-plan.md` (AD-013 minimal-graph-first LangGraph build). This file, `ARCHITECTURE.md`, and `TECH_DECISIONS.md` together are the ground-truth spec to feed OpenCode/DeepSeek for a from-scratch implementation, per the execution plan's three-tool workflow (Claude Architect / Claude Reviewer / OpenCode Implementer).
+**Revision note (2026-08-15):** Incorporates the two locked changes from `ask-my-filings-viability-review.md` (AD-012 XBRL-primary structured extraction; LLM decision reopened) and the build-sequencing change from `execution-plan.md` (AD-013 minimal-graph-first LangGraph build). This file, `ARCHITECTURE.md`, and `TECH_DECISIONS.md` together are the ground-truth spec to feed OpenCode/DeepSeek for a from-scratch implementation, per the execution plan's three-tool workflow (Claude Architect / Claude Reviewer / OpenCode Implementer).
 
 ---
 
@@ -152,7 +152,7 @@ Deployment: Vercel (FE) + Railway (BE, avoids serverless 10s timeout) + Supabase
 
 ## 8. IMPLEMENTATION STATUS (as of last reconciliation)
 
-**Completed:** Architecture fully decided (14 accepted decisions, 6 resolved conflicts documented above); tech stack finalized including the XBRL-hybrid structured-extraction path; UI/UX spec written; evaluation framework designed; repository structure planned (see `ask-my-filings-execution-plan.md` Part 6 for the exact folder tree); three-tool build workflow defined (Claude Architect / Claude Reviewer / OpenCode Implementer, see execution plan Part 1).
+**Completed:** Architecture fully decided (14 accepted decisions, 6 resolved conflicts documented above); tech stack finalized including the XBRL-hybrid structured-extraction path; UI/UX spec written; evaluation framework designed; repository structure planned (see `execution-plan.md` Part 6 for the exact folder tree); three-tool build workflow defined (Claude Architect / Claude Reviewer / OpenCode Implementer, see execution plan Part 1).
 
 **Not started:** Repository does not exist. No parser, chunker, extractor, XBRL client/normalizer, retrieval, LangGraph, frontend, or evaluation code written. No Supabase project provisioned. No sample filings downloaded. Embedding model and LLM undecided (Section 6).
 
@@ -164,4 +164,4 @@ Deployment: Vercel (FE) + Railway (BE, avoids serverless 10s timeout) + Supabase
 5. Build Path B structured extraction (Phase 3): `xbrl/concept_map.py` (hand-verified against real Apple data) → `xbrl/normalizer.py` → `xbrl/reconciliation.py` → `structured_financials`, with `extractor_fallback.py` demoted and logged.
 6. Build the Phase 4 minimal 3-node LangGraph path (Classifier → Retrieve/Generate → Refusal) and validate against a 10-question test set before starting Phase 5's full 8-node expansion.
 
-**Downstream phases (5-8: full LangGraph, frontend, evaluation, deployment) follow the roadmap already detailed in `ask-my-filings-execution-plan.md` Part 2 and are unaffected by this revision beyond the sequencing already noted above.**
+**Downstream phases (5-8: full LangGraph, frontend, evaluation, deployment) follow the roadmap already detailed in `execution-plan.md` Part 2 and are unaffected by this revision beyond the sequencing already noted above.**
