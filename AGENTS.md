@@ -21,3 +21,4 @@ Before completion:
 - run tests
 - verify requirements
 - report files changed
+- always update project memory file after any code updation.
